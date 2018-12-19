@@ -18,6 +18,4 @@ class FirstScreen extends Component {
     }
 }
 
-const mapStateToProps = state => ({})
-
-export default connect(mapStateToProps, {changeScreen})(FirstScreen)
+export default connect(null, {changeScreen})(FirstScreen)
