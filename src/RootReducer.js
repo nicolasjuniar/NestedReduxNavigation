@@ -1,5 +1,6 @@
 import React from 'react'
 import {combineReducers} from "redux";
+import ScreenReducer from './ScreenReducer'
 import FirstNavigator from './FirstNavigator'
 import SecondNavigator from './SecondNavigator'
 
@@ -15,7 +16,8 @@ const secondNavReducer = (state, action) => {
 
 const appReducer = combineReducers({
     firstNav: firstNavReducer,
-    secondNav: secondNavReducer
+    secondNav: secondNavReducer,
+    screen: ScreenReducer
 })
 
 const rootReducer = (state, action) => (
